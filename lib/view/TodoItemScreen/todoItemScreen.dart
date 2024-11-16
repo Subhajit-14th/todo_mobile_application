@@ -17,7 +17,7 @@ class _TodoItemScreenState extends State<TodoItemScreen> {
   Widget build(BuildContext context) {
     var height = MediaQuery.of(context).size.height;
     return Container(
-      height: 150,
+      height: 160,
       width: double.infinity,
       margin: const EdgeInsets.only(bottom: 16),
       padding: const EdgeInsets.all(16),
