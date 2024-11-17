@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:todo_app/common/app_color.dart';
+import 'package:todo_app/view/CompleteTodoScreen/completeTodoScreen.dart';
 import 'package:todo_app/view/EditProfile/editProfileScreen.dart';
 
 class ProfileScreen extends StatefulWidget {
@@ -119,7 +120,12 @@ class _ProfileScreenState extends State<ProfileScreen> {
               /// how many todo's complete are not
               profileButtonsWidget(
                 buttontext: 'Complete Todo',
-                onTap: () {},
+                onTap: () {
+                  Navigator.push(
+                      context,
+                      MaterialPageRoute(
+                          builder: (context) => const CompleteTodoScreen()));
+                },
               ),
               SizedBox(height: height * 0.02),
             ],
