@@ -169,7 +169,7 @@ class _CompleteTodoScreenState extends State<CompleteTodoScreen> {
                                 color: Colors.red,
                                 borderRadius: BorderRadius.circular(10),
                               ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   'No',
                                   style: TextStyle(
@@ -193,10 +193,10 @@ class _CompleteTodoScreenState extends State<CompleteTodoScreen> {
                                 color: Colors.green.shade300,
                                 borderRadius: BorderRadius.circular(10),
                               ),
-                              child: Center(
+                              child: const Center(
                                 child: Text(
                                   'Yes',
-                                  style: const TextStyle(
+                                  style: TextStyle(
                                     color: Colors.black,
                                     fontSize: 18,
                                     fontWeight: FontWeight.bold,
